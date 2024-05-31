@@ -14,7 +14,7 @@
 
     import { cli }                          from '@je-es/cli';
     import { exec }                         from 'child_process';
-    import * as path                        from 'path';
+    import { join }                         from 'path';
     import { moveRemove } from 'rimraf';
 
     const asyncExec = (cmd : string) => new Promise((resolve, reject) => exec(cmd, (err) => err ? reject(err) : resolve('done')));
@@ -59,9 +59,9 @@
                             throw new Error('Failed to clone project');
 
                             // Use rimraf to remove .git folder
-                            moveRemove(path.join(process.cwd(), name, '.git'));
+                            moveRemove(join(process.cwd(), name, '.git'));
 
-                            console.log(`Cloned project: [${name}] as [${type}] in [${process.cwd()}]`);
+                            console.log(`\nCloned project: [${name}] as [${type}] in [${process.cwd()}]\n`);
                         }
                     }
 
