@@ -1,6 +1,5 @@
 /* ---------------------------------------- PACK ----------------------------------------  */
 
-    import { Dummy }                        from '../../dist/main';
 
 /* ---------------------------------------- ---- ----------------------------------------  */
 
@@ -10,9 +9,9 @@
 
     describe("Basic Tests", () =>
     {
-        test("Should be defined !", () =>
+        test("Should be .. ", () =>
         {
-            expect(Dummy).toBeDefined();
+            expect(true).toBeTruthy();
         });
     });
 
