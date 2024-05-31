@@ -36,6 +36,7 @@
                 alias       : '--create',
                 args        : ['name'],
                 required    : ['as'],
+
                 callback    : async ({ name, type }) =>
                 {
                     try

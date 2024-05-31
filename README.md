@@ -5,7 +5,7 @@
 - #### 📥 Usage
 
     ```Bash
-    npm i @je-es/mecs --save-dev
+    npm i @je-es/mecs -g
     ```
 
 - #### 🌟 Syntax
