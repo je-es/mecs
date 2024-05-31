@@ -56,7 +56,7 @@
                             const res = await asyncExec(`git clone ${reopURL} ${name}`);
 
                             if(res !== 'done')
-                            throw new Error('Failed to clone project');
+                            throw new Error(`Failed to clone project [${res}]`);
 
                             // Use rimraf to remove .git folder
                             moveRemove(join(process.cwd(), name, '.git'));
