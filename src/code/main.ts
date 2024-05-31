@@ -23,9 +23,9 @@
     ({
         info:
         {
-            name: 'mecs',
-            description: 'packDesc',
-            version: '0.0.0',
+            name            : 'mecs',
+            description     : 'packDesc',
+            version         : '0.0.0',
         },
 
         actions:
