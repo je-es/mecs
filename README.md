@@ -11,17 +11,17 @@
 - #### 🌟 Syntax
 
     ```
-    npx mecs --create <name> --as <type>
+    npx mecs --create <type> --as <name>
     ```
 
     ```bash
     # create npm package
-    npx mecs --create myPackage --as npm
+    npx mecs --create npm --as myPackage
     ```
 
     ```bash
     # create electron application
-    npx mecs --create myApp --as electron
+    npx mecs --create electron --as myApp
     ```
 
     ```bash

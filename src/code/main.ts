@@ -34,10 +34,10 @@
             {
                 flag        : '-c',
                 alias       : '--create',
-                args        : ['name'],
+                args        : ['type'],
                 required    : ['as'],
 
-                callback    : async ({ name, type }) =>
+                callback    : async ({ type, name }) =>
                 {
                     try
                     {
@@ -62,7 +62,7 @@
                             // Use rimraf to remove .git folder
                             moveRemove(join(process.cwd(), name, '.git'));
 
-                            console.log(`\nCloned project: [${name}] as [${type}] in [${process.cwd()}]\n`);
+                            console.log(`\nCloned [${type}] repo as [${name}] in [${process.cwd()}]\n`);
                         }
                     }
 
@@ -73,7 +73,7 @@
                 }
             },
 
-            as: { args : ['type'] }
+            as: { args : ['name'] }
         }
     });
 

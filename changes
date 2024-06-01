@@ -1,3 +1,7 @@
-- ## yyyy/mm/dd
+- ## 0.0.1
+    - Publish !
 
-    - **Starting `the-project-name`** - _the-project-desc._
+- ## 0.0.2
+    - Re-Order name and type arguments
+
+        > _from_ `--create <name> --as <type>` to `--create <type> --as <name>`
