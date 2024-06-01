@@ -22,7 +22,7 @@
     ```bash
     # create electron application
     npx mecs --create electron --as myApp
-    ```
+    ``` 
 
     ```bash
     # 🌟 and more  ..
